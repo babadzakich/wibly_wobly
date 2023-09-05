@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int minimal_number = 21, maximal_number = 0,minimal_index, maximal_index, amount_of_digits;
+    scanf("%d", &amount_of_digits);
+    
+    for(int index = 1; index <= amount_of_digits; index++){
+        int digit;
+        scanf("%d", &digit);
+        
+        if(digit < minimal_number){
+            minimal_number = digit;
+            minimal_index = index;
+        }
+       
+         if(digit > maximal_number){
+            maximal_number = digit;
+            maximal_index = index;
+        }
+    }
+    printf("%d %d %d %d", minimal_number, minimal_index, maximal_number, maximal_index);
+   return 0;
+}
