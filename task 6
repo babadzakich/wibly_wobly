@@ -2,7 +2,7 @@
 
 int main()
 {
-    int minimal_number = 21, maximal_number = 0,minimal_index, maximal_index, amount_of_digits;
+    int minimal_number = 10001, maximal_number = 0,minimal_index, maximal_index, amount_of_digits;
     scanf("%d", &amount_of_digits);
     
     for(int index = 1; index <= amount_of_digits; index++){
